@@ -1,0 +1,80 @@
+#workwrapper {
+  height: auto;
+  padding: 10px;
+  opacity: 0;
+}
+#emptyhead {
+  height: 40px;
+}
+#worktext {
+  height: auto;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#worktext h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+  color: var(--color3);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#worktext p {
+  font-family: "Roboto", sans-serif;
+  color: var(--color2);
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+#worktext h2 {
+  color: var(--color3);
+  font-size: 2.4rem;
+  font-family: "Oswald", sans-serif;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.project {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px var(--color2) solid;
+}
+.project-link {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--color2);
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5rem;
+}
+#freecode {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#worktext h3 {
+  color: var(--color3);
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  padding: 0;
+  margin: 0;
+  margin-top: 19px;
+  margin-bottom: 19px;
+}
+@media (max-width: 750px) {
+  #worktext h1 {
+    font-size: 2.5rem;
+  }
+  #worktext p {
+    font-size: 1rem;
+  }
+  #worktext h2 {
+    font-size: 2rem;
+  }
+  #worktext h3 {
+    font-size: 1.8rem;
+  }
+  .project-link {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,23 @@
+#background {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: -100;
+  overflow: hidden;
+}
+#bgpic {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.2;
+  z-index: -150;
+  transform: scaleX(-1);
+  object-fit: cover;
+}
+#bgcolor {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: -200;
+  background: var(--color1);
+}

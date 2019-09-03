@@ -1,0 +1,105 @@
+#headerwrap {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 0.05rem;
+}
+#navbar2 {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#JK {
+  position: relative;
+  left: 5%;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--color3);
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+#navbar2 ul {
+  position: absolute;
+  right: 5%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+#navbar2 li {
+  list-style: none;
+}
+.thelink2 {
+  text-decoration: none;
+  color: var(--color2);
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  padding-left: 14px;
+}
+#hamburger {
+  position: absolute;
+  right: 10px;
+  display: none;
+  z-index: 1500;
+}
+.ham {
+  width: 20px;
+  height: 4px;
+  background: var(--color3);
+  margin: 2px;
+}
+#navbar3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-height: 100vh;
+  width: 0%;
+  display: flex;
+  align-items: center;
+  background: var(--color1);
+  display: none;
+  z-index: 1000;
+}
+#navbar3 ul {
+  padding: 0;
+  margin: 0;
+  margin: 0 auto;
+  position: relative;
+  right: 100%;
+  display: none;
+}
+#navbar3 li {
+  list-style: none;
+}
+#navbar3 a {
+  text-decoration: none;
+  color: var(--color3);
+  font-family: "Oswald", sans-serif;
+  font-size: 4rem;
+}
+@media (max-width: 1000px) {
+  #JK {
+    left: 10px;
+  }
+  #navbar2 ul {
+    right: 10px;
+  }
+}
+@media (max-width: 750px) {
+  #navbar2 ul {
+    display: none;
+  }
+  #hamburger {
+    display: initial;
+  }
+}
+@media (max-width: 350px) {
+  #navbar3 a {
+    font-size: 3rem;
+  }
+}
