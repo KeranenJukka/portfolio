@@ -1,10 +1,10 @@
+:root {
+  --height: 96vh;
+}
 body {
   margin: 0;
   padding: 0;
   --color1: #111111;
   --color2: white;
   --color3: #ff4f4f;
-
-  --font1: "Oswald", sans-serif;
 }
-

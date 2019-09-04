@@ -1,13 +1,13 @@
 
 #homewrapper {
     
-    min-height: 100vh;
+    min-height: var(--height);
     width: 100%;
-    
+    overflow-y: auto;
 }
 
 #contwrapper {
-    min-height: 100vh;
+    min-height: var(--height);
     display: flex;
     align-items: center;
 }

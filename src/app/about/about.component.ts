@@ -24,6 +24,8 @@ export class AboutComponent implements OnInit {
 
     var wrap = document.getElementById("aboutwrapper");
 
+    window.scrollTo(0, 0);
+
     TweenMax.to(wrap, 2, {opacity: 1, delay: 2})
   }
 

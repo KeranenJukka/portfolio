@@ -17,6 +17,7 @@ export class ContactComponent implements OnInit {
     this.messageService.sendMessage('contact');
     var wrap = document.getElementById("contactwrapper");
 
+    window.scrollTo(0, 0);
     TweenMax.to(wrap, 2, {opacity: 1, delay: 2})
   }
 

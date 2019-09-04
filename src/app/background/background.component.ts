@@ -11,6 +11,7 @@ import { MessageService } from '../message/message.component';
 
 import {TweenMax} from "gsap/TweenMax";
 
+
 @Component({
   selector: 'app-background',
   templateUrl: './background.component.html',
@@ -29,6 +30,9 @@ export class BackgroundComponent implements OnInit {
 
   ngOnInit() {
    
+    var screenHeight = window.innerHeight;
+    
+    document.documentElement.style.setProperty('--height', screenHeight + "px");
 
 
   }
@@ -65,18 +69,33 @@ controls.autoRotateSpeed = 0.18;
   
 renderer.setClearColor( "#000000", 0 );
 
-renderer.setSize(window.innerWidth, window.innerHeight);
+
 
 var background = document.getElementById("background");
 
-
-
 background.appendChild(renderer.domElement);
 
-window.addEventListener('resize', function () {
+renderer.setSize(window.innerWidth, window.innerHeight);
+
+
+
+window.addEventListener('resize', function (e) {
+
+
+  var screenHeight = window.innerHeight;
+    
+  document.documentElement.style.setProperty('--height', screenHeight + "px");
+/*
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();*/
+
+
   renderer.setSize(window.innerWidth, window.innerHeight);
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
+ 
+
 })
 
 

@@ -17,7 +17,11 @@ export class WorkComponent implements OnInit {
     this.messageService.sendMessage('work');
     var wrap = document.getElementById("workwrapper");
 
+    window.scrollTo(0, 0);
+
     TweenMax.to(wrap, 2, {opacity: 1, delay: 2})
+
+    
   }
 
 }

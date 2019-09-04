@@ -1,9 +1,10 @@
 #aboutwrapper {
 
-    min-height: calc(96vh - 50px);
+    min-height: calc(var(--height) - 50px);
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     opacity: 0;
 }
 

@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+    --height: 96vh;
+  }
+
 body {
     margin: 0;
     padding: 0;
@@ -7,5 +11,7 @@ body {
     --color1: #111111;
     --color2: white;
     --color3: #ff4f4f;
+
+    
 
 }
