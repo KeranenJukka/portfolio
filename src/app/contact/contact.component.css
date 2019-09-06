@@ -12,11 +12,12 @@
 #contact-text {
   margin: 0 auto;
   width: 100%;
-  max-width: 1000px;
+  max-width: 950px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 #contact-text h1 {
   margin: 0;

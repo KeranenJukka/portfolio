@@ -10,7 +10,7 @@
 #worktext {
   height: auto;
   width: 100%;
-  max-width: 1000px;
+  max-width: 950px;
   margin: 0 auto;
 }
 #worktext h1 {
@@ -44,7 +44,7 @@
 }
 .project-link {
   font-size: 1.2rem;
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--color2);
   font-family: "Roboto", sans-serif;
   line-height: 1.5rem;
