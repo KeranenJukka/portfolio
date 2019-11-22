@@ -37,7 +37,7 @@ export class BackgroundComponent implements OnInit {
 
   }
 
-  ngAfterViewInit() {
+ ngAfterViewInit() {
     
     
 
@@ -53,7 +53,7 @@ var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHe
 
 camera.position.x = 0;
 camera.position.y = 0;
-camera.position.z = -280;
+camera.position.z = -140;
 
 
 // this is the canvas
@@ -130,11 +130,11 @@ loader.load( 'assets/3d/white3.glb', function ( gltf ) {
 
 // the light
 
-var light = new THREE.PointLight( "white", 0.5 );
-var light2 = new THREE.PointLight( "white", 0.5 );
-var light3 = new THREE.PointLight( "white", 0.5 );
-var light4 = new THREE.PointLight( "#2e6691", 0.5 );
-var light5 = new THREE.PointLight( "#2e6691", 1 );
+var light = new THREE.PointLight( "white", 0.4 );
+var light2 = new THREE.PointLight( "white", 0.4 );
+var light3 = new THREE.PointLight( "white", 0.4 );
+var light4 = new THREE.PointLight( "#2e6691", 0.4 );
+var light5 = new THREE.PointLight( "#2e6691", 0.4 );
 
 light.position.set(-1500, 0, -200 );
 light2.position.set( 1500, 0, -200 );
@@ -190,12 +190,12 @@ animate();
 /*
 setTimeout(() => {
   cancelAnimationFrame( id );
-}, 4000);
+},1000);
 /*----------------------------------------------*/
    
 function homeAnim () {
   
-  TweenMax.to(camera.position, 2, {x: 0, y: 0, z: -280});
+  TweenMax.to(camera.position, 2, {x: 0, y: 0, z: -140});
 }
 
 function aboutAnim () {
@@ -229,6 +229,12 @@ this.messageService.getMessage().subscribe(message => {
   }
 
 })
+
+
+
+
+
+
 
 
   }

@@ -5,17 +5,24 @@
     height: 100vh;
     z-index: -100;
     overflow: hidden;
+    
+}
+
+#bgpiccont {
+    
+    position: fixed;
+
+    opacity: 0.2;
+    z-index: -150;
+    overflow: hidden;
 }
 
 #bgpic {
-    position: fixed;
     width: 100vw;
     height: 100vh;
-    opacity: 0.2;
-    z-index: -150;
-    transform: scaleX(-1);
+    
     object-fit: cover;
-    overflow: hidden;
+    
 }
 
 #bgcolor {
