@@ -11,8 +11,8 @@
 #bgpiccont {
     
     position: fixed;
-    
-    opacity: 0.03;
+    filter: brightness(40%);
+    opacity: 0.3;
     z-index: -150;
     overflow: hidden;
 }
