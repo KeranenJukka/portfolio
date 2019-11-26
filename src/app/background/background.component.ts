@@ -130,17 +130,18 @@ loader.load( 'assets/3d/white3.glb', function ( gltf ) {
 
 // the light
 
-var light = new THREE.PointLight( "white", 0.4 );
-var light2 = new THREE.PointLight( "white", 0.4 );
-var light3 = new THREE.PointLight( "white", 0.4 );
-var light4 = new THREE.PointLight( "#2e6691", 0.4 );
-var light5 = new THREE.PointLight( "#2e6691", 0.4 );
+var light = new THREE.PointLight( "#f013c5", 0.3 );
+var light2 = new THREE.PointLight( "#f013c5", 0.4 );
+var light3 = new THREE.PointLight( "#34cede", 0.3 );
+var light4 = new THREE.PointLight( "#34cede", 0.3 );
+var light5 = new THREE.PointLight( "#34cede", 0.3 );
 
-light.position.set(-1500, 0, -200 );
-light2.position.set( 1500, 0, -200 );
-light3.position.set( 0, 0, -1500);
-light4.position.set( 0, 0, 1500);
-light5.position.set( 0, 2000, 0);
+
+light.position.set(0, 0, -50 );
+light2.position.set( 1000, 0, -200 );
+light3.position.set( -1000, 0, -200);
+light4.position.set( 0, 1000, -200);
+light5.position.set( 0, -1000, -200);
 
 light.lookAt( 0, 0, 0 );
 light2.lookAt( 0, 0, 0 );
@@ -154,6 +155,12 @@ scene.add(light3)
 scene.add(light4)
 scene.add(light5)
 
+/*
+
+scene.add(light3)
+scene.add(light4)
+scene.add(light5)
+*/
 
 
 // let's render the scene and the camera
@@ -190,7 +197,7 @@ animate();
 /*
 setTimeout(() => {
   cancelAnimationFrame( id );
-},1000);
+},2000);
 /*----------------------------------------------*/
    
 function homeAnim () {

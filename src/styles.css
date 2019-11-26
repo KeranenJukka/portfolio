@@ -4,7 +4,9 @@
 body {
   margin: 0;
   padding: 0;
-  --color1: #111111;
+  --color1: #030835;
   --color2: white;
-  --color3: #ff4f4f;
+  --color3: #34cede;
+  --color4: #34cede;
+  --color5: #f013c5;
 }
