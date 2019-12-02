@@ -9,9 +9,7 @@ import { MessageService } from '../message/message.component';
 })
 export class HomeComponent implements OnInit {
 
-  changePage () {
-    console.log("JEaa")
-  }
+
 
   constructor(private messageService: MessageService) {
 
